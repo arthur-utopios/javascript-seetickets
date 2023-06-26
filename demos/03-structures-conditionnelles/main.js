@@ -41,3 +41,13 @@ switch (code) {
 }
 
 alert(message);
+
+// Opérateur ternaire "expression ? true : false"
+let result = code > 300 ? "Danger" : "Cool";
+
+let maValeurNulle = null;
+
+// Opérateur de coalescence "valeurPotentiellementNulleOuUndefinied ?? ValeurParDéfaut"
+let prenom = maValeurNulle ?? "Jean";
+
+console.log(prenom);
