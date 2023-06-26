@@ -16,7 +16,7 @@ Multi-lignes
 // String
 let prenom = "Arthur";
 
-// Integer
+// Number
 let age = 25;
 
 // Boolean
@@ -36,3 +36,5 @@ const YELLOW_SUBMARINE = "#ffff14";
 
 // nom = "TOTO"; ERREUR impossible de réassigner une constante
 
+console.log("isAdulte:", typeof isAdulte);
+console.log("age:", typeof age);
