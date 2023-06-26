@@ -16,6 +16,10 @@ console.log(random);
 
 let response;
 
-do {
-  response = prompt("Trouver le nombre mystère: ");
-} while (response !== );
+// do {
+//   response = prompt("Trouver le nombre mystère: ");
+// } while (response !== random);
+
+if (random > 5) {
+  debugger;
+}
