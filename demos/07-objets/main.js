@@ -104,3 +104,15 @@ console.log(monContact.toString());
 console.dir(Object.prototype);
 
 console.dir(new Date());
+
+// Parcourir les propriétés d'un objet
+for(let key in monContact) {
+    console.log(monContact[key]);
+}
+
+// accès aux propriétés via la notation objet[clé]
+console.log(monContact["prenom"]);
+
+monContact["     YOOOO    "] = "Hello world";
+
+console.log(monContact["     YOOOO    "]);
