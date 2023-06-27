@@ -52,7 +52,7 @@ Fonctions fléchées
 const division = (number1, number2) => number1 / number2;
 
 // Omission des parenthèses lorsqu'il n'y a qu'un seul paramètre
-const logName = (name) => console.log(name);
+const logName = name => console.log(name);
 
 const isDivisibleBy = (number1, number2) => {
   return number1 % number2 === 0;
