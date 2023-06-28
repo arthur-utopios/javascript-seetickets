@@ -116,3 +116,21 @@ console.log(monContact["prenom"]);
 monContact["     YOOOO    "] = "Hello world";
 
 console.log(monContact["     YOOOO    "]);
+
+// Chaînage optionnel
+console.log(monContact?.bonjour);
+
+let obj = {
+  name: "toto",
+  toString() {
+    return this.name;
+  },
+  valueOf() {
+    return this.name.length;
+  }
+}
+
+// Surcharge des méthodes toString et valueOf héritées de Object
+console.log(String(obj));
+
+console.log(+obj);
