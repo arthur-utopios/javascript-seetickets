@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 - DOM</title>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <navbar>
+        <ul class="navbar">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#apropos">A-propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </navbar>
+
+    <main>
+        <section>
+            <h1>Mon titre super cool</h1>
+            <p>Mon paragraph</p>
+        </section>
+        <section id="apropos">
+            <h2>A propos</h1>
+                <p>mon site est vraiment très bien codé</p>
+        </section>
+    </main>
+
+    <footer class="contact">
+        <h2>Contact</h2>
+        <form action="">
+            <div>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="toto@email.fr">
+            </div>
+
+            <div>
+                <label for="message">message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Saisir votre message"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">envoyer</button>
+            </div>
+
+        </form>
+    </footer>
+</body>
+
+
+</html>
