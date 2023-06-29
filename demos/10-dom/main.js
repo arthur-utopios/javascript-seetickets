@@ -57,16 +57,40 @@ console.log(myAnchor.parentElement.nextElementSibling);
 let button = document.getElementById("btn-submit");
 
 button.addEventListener("click", function (e) {
-    e.preventDefault();
+  e.preventDefault();
 
   let inputs = document.getElementsByTagName("input");
 
   console.log(inputs);
 
   let div = document.createElement("div");
-  Array.from(inputs).forEach();
+
   [...inputs].forEach((input) => {
+    console.log(input.value);
+    if (input.value !== "toto@gmail.com") {
+      let danger = document.createElement("p");
+      danger.innerText = "mauvaise adresse mail";
+      danger.style.color = "red";
+      document.querySelector(".email-container").append(danger);
+      setTimeout(() => danger.remove(), 3000);
+      return;
+    }
+
     div.innerHTML += `<p>${input.value}</p>`;
   });
   document.body.append(div);
 });
+
+document.querySelector(".message-container").lastElementChild.hidden = false;
+
+// Création d'un élément texte  
+let monTexte = document.createTextNode("Hello world!");
+
+document.body.insertAdjacentHTML("beforeend", "<p> Hello world </p>");
+
+// Accès aux classes d'une liste
+button.classList.add("red");
+
+button.classList.remove("red");
+
+button.style.color = "red";
