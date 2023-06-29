@@ -16,10 +16,10 @@ console.log(sections);
 // récupérer des éléments par leur classes
 let contact = document.getElementsByClassName("contact");
 
-console.log(contact)
+console.log(contact);
 
 // Transformation d'une HTMLCollection en tableau avec le spread operator
-let tab = [...sections].forEach(element => console.log(element.innerHTML));
+let tab = [...sections].forEach((element) => console.log(element.innerHTML));
 
 // Récupérer le premier élément à partir d'un sélecteur css
 let firstLi = document.querySelector("navbar li");
@@ -30,7 +30,7 @@ console.log(firstLi);
 let allLi = document.querySelectorAll("navbar a");
 
 // Modifier les propriétés css de chaque element html
-allLi.forEach(element => element.style.color = "red");
+allLi.forEach((element) => (element.style.color = "red"));
 
 console.log(firstLi.outerHTML);
 console.log(firstLi.innerHTML);
@@ -53,3 +53,20 @@ console.log(myAnchor.firstChild);
 
 // On remonte à l'élément parent puis à l'élément qui le succède
 console.log(myAnchor.parentElement.nextElementSibling);
+
+let button = document.getElementById("btn-submit");
+
+button.addEventListener("click", function (e) {
+    e.preventDefault();
+
+  let inputs = document.getElementsByTagName("input");
+
+  console.log(inputs);
+
+  let div = document.createElement("div");
+  Array.from(inputs).forEach();
+  [...inputs].forEach((input) => {
+    div.innerHTML += `<p>${input.value}</p>`;
+  });
+  document.body.append(div);
+});
