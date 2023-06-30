@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice19</title>
+    <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="fadeIn">
+                fadeIn
+                <input type="radio" name="transition" id="fadeIn" value="fadeIn">
+            </label>
+        </div>
+
+        <div>
+            <label for="slideDown">
+                slideDown
+                <input type="radio" name="transition" id="slideDown" value="slideDown">
+            </label>
+        </div>
+
+        <div>
+            <label for="fadeToggle">
+                fadeToggle
+                <input type="radio" name="transition" id="fadeToggle" value="fadeToggle">
+            </label>
+        </div>
+        <button id="clicker">Click me to toggle a hidden secret!</button>
+    </form>
+    <div id="secret" style="display: none">I am a hidden secret.</div>
+</body>
+</html>
